@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #141414;
+}
+
+header {
+    /* sizing & positioning */
+    width: 100%;
+    min-height: 4em;
+    margin: 0 0 1em 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* decor */
+    background-color: gray;
+}
+
+ul li {
+    /* sizing & positioning */
+    display: inline-block;
+    position: relative;
+    /* decor */
+    list-style: none;
+}
+
+li a {
+    /* sizing & positioning */
+    display: block;
+    margin: 0 0em;
+    padding: 0 1em;
+    /* decor */
+    text-decoration: none;
+    color: black;
+}
+
+ul li ul.dropdown-content {
+    /* sizing & positioning */
+    /* min-width: 100%; */
+    min-height: 4em;
+    position: absolute;
+    left: 0;
+    margin: 1.2em 0 0 0;
+    text-align: center;
+    /* display: none; */
+    z-index: 1;
+    /* decor */
+    border-radius: 0.4em;
+    background-color: grey;
+}
+
+ul li ul.dropdown-content li {
+    padding: 0.5em 0;
+}
+
+
+.contact-socials {
+    margin: 1%;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: dense;
+    /* grid-template-rows: repeat(1, auto); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contact-titles {
+    /* sizing & positioning */
+    width: 96%;
+    font-size: 1em;
+    margin: 0.25em 0;
+    padding: 0.6em 0;
+    /* decor */
+    border-radius: 0.2em;
+    color: black;
+    background-color: white;
+}
+
+.contact-socials a {
+    /* sizing & positioning */
+    width: 96%;
+    height: auto;
+    font-size: 1.4em;
+    margin: 0.25em 0;
+    padding: 0.6em 0.8em;
+    float: left;
+    display: block;
+    /* decor */
+    text-decoration: none;
+    border-radius: 0.2em;
+    color: white;
+    background-color: black;
+    transition: 0.4s;
+    /* animation: socialol 1s ease; */
+}
+
+.contact-socials a:hover {
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 15px 5px rgb(78, 85, 94);
+}
+
+/* @keyframes socialol {} */
