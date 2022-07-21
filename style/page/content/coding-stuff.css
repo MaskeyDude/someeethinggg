@@ -1,14 +1,63 @@
-header {
-    color: white;
+body {
+    background: url(../../../img/black-keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::selection {
+    color: black;
     background-color: darkred;
 }
 
+::-webkit-scrollbar {
+    width: 0.4em;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.8em;
+    background: rgba(139, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 0, 0, 0.5);
+}
+
+header {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: fixed;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    color: darkred;
+    background-color: transparent;
+}
+
 li a {
-    color: white;
+    color: darkred;
 }
 
 ul li ul.dropdown-content {
-    background-color: black;
+    background-color: #141414;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 95vh;
+    padding: 4em 0;
+}
+
+/* blogs */
+
+.blog-title {
+    text-align: center;
+    color: darkred;
+}
+
+hr {
+    margin: 1.5em 1em;
+    border: 1px solid darkred;
 }
 
 .blogs {
@@ -28,22 +77,20 @@ ul li ul.dropdown-content {
     justify-content: space-between;
     /* decor */
     border-radius: 0.4em;
-    color: darkred;
-    background-color: black;
+    color: rgb(50, 50, 50);
+    background-color: rgb(200, 200, 200);
     transition: 0.4s;
 }
 
 .blogs div:hover {
     cursor: pointer;
-    color: red;
-    box-shadow: 0 0 6px 2px darkred;
+    color: darkred;
+    box-shadow: 0 0 6px 3px darkred;
 }
 
 .time {
-    /* sizing & positioning */
     font-size: 0.6em;
-    /* decor */
-    color: rgba(139, 0, 0, 0.8);
+    color: rgb(50, 50, 50, 0.8);
 }
 
 @media (max-width: 800px) {
