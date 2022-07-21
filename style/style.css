@@ -1,3 +1,9 @@
+/* to do
+remove all the colors from here
+add different a .css file for every .html page
+not pressure my self lol!
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +19,7 @@ header {
     /* sizing & positioning */
     width: 100%;
     min-height: 2em;
-    margin: 0 0 1em 0;
+    /* margin: 0 0 1em 0; */
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -33,8 +39,8 @@ ul li {
 li a {
     /* sizing & positioning */
     display: block;
-    margin: 0 0em;
-    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    padding: 0.8em 0;
     /* decor */
     text-decoration: none;
     color: black;
@@ -43,7 +49,6 @@ li a {
 ul li ul.dropdown-content {
     /* sizing & positioning */
     min-width: 100%;
-    /* min-height: 4em; */
     position: absolute;
     left: 0;
     text-align: center;
@@ -52,11 +57,6 @@ ul li ul.dropdown-content {
     /* decor */
     border-radius: 0.2em;
     background-color: darkgrey;
-}
-
-ul a:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 ul li:hover ul.dropdown-content {
@@ -70,17 +70,23 @@ ul li ul.dropdown-content li {
 /* contact */
 
 .contact-socials {
-    margin: 1%;
-    text-align: center;
     display: grid;
-    grid-auto-flow: dense;
-    /* grid-template-rows: repeat(1, auto); */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.5em;
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+@media (max-width: 850px) {
+
+    .contact-socials {
+        grid-template-columns: 1fr;
+    }
 }
 
 .contact-titles {
     /* sizing & positioning */
-    width: 96%;
+    /* width: 96%; */
     font-size: 1em;
     margin: 0.25em 0;
     padding: 0.6em 0;
@@ -92,7 +98,7 @@ ul li ul.dropdown-content li {
 
 .contact-socials a {
     /* sizing & positioning */
-    width: 96%;
+    width: 100%;
     height: auto;
     font-size: 1.4em;
     margin: 0.25em 0;
@@ -115,12 +121,5 @@ ul li ul.dropdown-content li {
     box-shadow: 0 0 15px 5px rgb(78, 85, 94);
 }
 
-/* @keyframes socialol {} */
+/* coding stuff */
 
-
-/* yt stuff */
-
-.lol {
-    color: white;
-    text-decoration: wavy;
-}

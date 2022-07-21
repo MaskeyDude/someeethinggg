@@ -1,0 +1,60 @@
+header {
+    color: white;
+    background-color: darkred;
+}
+
+li a {
+    color: white;
+}
+
+ul li ul.dropdown-content {
+    background-color: black;
+}
+
+.blogs {
+    text-align: center;
+    padding: 0 0.25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blogs div {
+    /* sizing & positioning */
+    font-size: 1.4em;
+    margin: 0.25em;
+    padding: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* decor */
+    border-radius: 0.4em;
+    color: darkred;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.blogs div:hover {
+    cursor: pointer;
+    color: red;
+    box-shadow: 0 0 6px 2px darkred;
+}
+
+.time {
+    /* sizing & positioning */
+    font-size: 0.6em;
+    /* decor */
+    color: rgba(139, 0, 0, 0.8);
+}
+
+@media (max-width: 800px) {
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .blogs div {
+        display: block;
+        padding: 0.4em;
+    }
+
+}
